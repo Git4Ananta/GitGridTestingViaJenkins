@@ -29,6 +29,7 @@ public class GridHubNodesTest {
 		//capabilities.setCapability(FirefoxDriver.MARIONETTE, true);
 		//capabilities.setCapability("deviceName","Sri-PC");
 		//driver = new RemoteWebDriver(new URL("http://192.168.1.35:4444/wd/hub"), capabilities);
+		System.out.println("Using GIT as well to integrate into Jenkins");
 		driver = new RemoteWebDriver(new URL(settings.NODE2URL), capabilities);
 		driver.manage().window().maximize();
 	}
