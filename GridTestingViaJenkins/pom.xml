@@ -7,7 +7,7 @@
 	<description>GridTestingDemo</description>
 	
 	<properties>
-		<suiteXMLFile>src/main/resources/testng.xml</suiteXMLFile>
+		<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
 	</properties>
 
 	<dependencies>
