@@ -4,6 +4,11 @@
 	<groupId>seleniumGrp1</groupId>
 	<artifactId>seleniumArtfactId1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<description>GridTestingDemo</description>
+	
+	<properties>
+		<suiteXMLFile>src/main/resources/testng.xml</suiteXMLFile>
+	</properties>
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -13,14 +18,36 @@
 			<version>3.4.0</version>
 		</dependency>
 		
-
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>6.11</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.11</version>
+		</dependency>
 
 	</dependencies>
+	
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.6.0</version>
+		</plugin>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifiactId>maven-surefire-plugin</artifiactId>
+			<version>2.20.0</version>
+			<configuration>
+				<suiteXmlFiles>
+					<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+				</suiteXmlFiles>
+			</configuration>
+			
+		</plugin>
+	</plugins>
+	
+	<build>
+	
+	</build>
 
 </project>
